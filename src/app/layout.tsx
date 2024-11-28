@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { FC, ReactNode } from "react";
+import { FC, PropsWithChildren, } from "react";
+import { Header } from "@/components/header";
+import { Main } from "@/components/main";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,15 +15,14 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-type RootLayoutProps = {
-  children: ReactNode
-}
-
-const RootLayout: FC<RootLayoutProps> = ({children}) => {
+const RootLayout: FC<PropsWithChildren> = ({children}) => {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header/>
+        <Main>
         {children}
+        </Main>
       </body>
     </html>
   );
