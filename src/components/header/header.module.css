@@ -1,8 +1,33 @@
-.header{
-    background-color: rgba(59,130,246,5);
-    padding: 2px 2px 16px;
-    text-align: center;
-    color: aliceblue;
-    font-weight: bold;
-    font-size: xx-large;
+.header {
+  padding-block: 8px;
+}
+.header__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.header__logo {
+  grid-column: 1 / span 4;
+}
+
+.header__title {
+  grid-column: 5 / span 8;
+}
+
+.header__text {
+  text-align: center;
+  color: var(--brand-primary);
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+@media (width>= 48em) {
+  .header__logo {
+    grid-column: 1 / span 2;
+  }
+
+  .header__title {
+    grid-column: 3 / span 8;
+  }
 }

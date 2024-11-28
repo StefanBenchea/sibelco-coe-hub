@@ -1,0 +1,20 @@
+.section {
+}
+
+.section__grid {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+  padding-inline: var(--gutter);
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.section__container {
+  grid-column: 3 / span 8;
+}
+
+.section__container--wide {
+  grid-column: 1 / span 12;
+}

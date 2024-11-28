@@ -1,27 +1,23 @@
-import localFont from "next/font/local";
+import { Fira_Sans } from "next/font/google";
 import "./globals.css";
 import { FC, PropsWithChildren, } from "react";
 import { Header } from "@/components/header";
 import { Main } from "@/components/main";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const firaSans = Fira_Sans({
+  variable: "--font-fira-sans",
+  subsets: ['latin'],
+  weight: ["400", '500']
+})
 
-const RootLayout: FC<PropsWithChildren> = ({children}) => {
+
+const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Header/>
+      <body className={firaSans.variable}>
+        <Header />
         <Main>
-        {children}
+          {children}
         </Main>
       </body>
     </html>
