@@ -3,6 +3,7 @@ import "./globals.css";
 import { FC, PropsWithChildren, } from "react";
 import { Header } from "@/components/header";
 import { Main } from "@/components/main";
+import { Footer } from "@/components/footer";
 
 const firaSans = Fira_Sans({
   variable: "--font-fira-sans",
@@ -19,6 +20,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
         <Main>
           {children}
         </Main>
+        <Footer />
       </body>
     </html>
   );

@@ -4,6 +4,7 @@ import styles from "./text.module.css"
 
 
 type TextProps = {
+    as?: "h1" | "h2" | "h3" | "h4" | "p"
     children: ReactNode
     size?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl"
     transform?: "uppercase"
@@ -13,8 +14,9 @@ type TextProps = {
     alignMd?: "start" | "center" | "end"
 }
 
-export const Text: FC<TextProps> = ({ children, size, transform, weight, color, align, alignMd }) => {
-    return <h1 className={clsx({
+export const Text: FC<TextProps> = ({ children, size, transform, weight, color, align, alignMd, as = "p" }) => {
+    const Element = as
+    return <Element className={clsx({
         [styles["text"]]: true,
         [styles['text--color-heading']]: color === 'heading',
         [styles['text--size-3xl']]: size === '3xl',
@@ -33,5 +35,5 @@ export const Text: FC<TextProps> = ({ children, size, transform, weight, color, 
 
     })}>
         {children}
-    </h1>
+    </Element>
 }

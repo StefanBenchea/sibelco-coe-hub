@@ -23,6 +23,10 @@ body {
   --line-height-sm: 1.225rem;
   --font-weight-regular: 400;
   --font-weight-bold: 500;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (width >= 48em) {

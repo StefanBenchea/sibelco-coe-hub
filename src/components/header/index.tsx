@@ -11,8 +11,8 @@ export const Header = () => (
                 <Image alt="sibelco logo" src={logo} />
             </div>
             <div className={styles['header__title']}>
-                <Text align="end" color="heading" size="2xl" weight="bold" alignMd="center">
-                    CoE Hub
+                <Text as='h1' align="end" color="heading" size="2xl" weight="bold" alignMd="center">
+                    CoE HR Hub
                 </Text>
             </div>
         </Section>
