@@ -1,0 +1,62 @@
+@import 'modern-css-reset';
+
+body {
+  min-width: 320px;
+  font-family: var(--font-fira-sans);
+  --max-width: 1204px;
+  --gap: 8px;
+  --gutter: 16px;
+  --brand-primary: #124682;
+  --brand-interactive: #0a7cff;
+  --brand-dark: #030303;
+  --brand-light: #fff;
+  --brand-outline: #bbb;
+  --brand-surface: #fff;
+  --text-default: var(--brand-dark);
+  --text-heading: var(--brand-primary);
+  --font-size-3xl: 1.875rem;
+  --font-size-2xl: 1.875rem;
+  --font-size-xl: 1.875rem;
+  --font-size-lg: 1.0625rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.875rem;
+  --line-height-3xl: 2.25rem;
+  --line-height-2xl: 2.25rem;
+  --line-height-xl: 2.25rem;
+  --line-height-lg: 1.25rem;
+  --line-height-md: 1.5rem;
+  --line-height-sm: 1.225rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 500;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  --size-2xl: 32px;
+  --size-xl: 24px;
+  --size-lg: 20px;
+  --size-md: 16px;
+  --size-sm: 12px;
+  --size-xs: 8px;
+}
+
+@media (width >= 48em) {
+  body {
+    --gap: 16px;
+    --gutter: 32px;
+    --font-size-3xl: 3.75rem;
+    --font-size-2xl: 2.5rem;
+    --font-size-xl: 1.875rem;
+    --font-size-lg: 1.25rem;
+    --font-size-md: 1rem;
+    --font-size-sm: 0.875rem;
+    --line-height-3xl: 4.5rem;
+    --line-height-2xl: 3rem;
+    --line-height-xl: 2.25rem;
+    --line-height-lg: 2.5rem;
+    --line-height-md: 1.5rem;
+    --line-height-sm: 1.225rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 500;
+  }
+}

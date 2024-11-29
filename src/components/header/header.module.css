@@ -1,0 +1,36 @@
+.header {
+  padding-block: 8px;
+  position: sticky;
+  top: 0;
+  background: var(--brand-surface);
+}
+.header__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.header__logo {
+  grid-column: 1 / span 4;
+}
+
+.header__title {
+  grid-column: 5 / span 8;
+}
+
+.header__text {
+  text-align: center;
+  color: var(--brand-primary);
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+@media (width>= 48em) {
+  .header__logo {
+    grid-column: 1 / span 2;
+  }
+
+  .header__title {
+    grid-column: 3 / span 8;
+  }
+}

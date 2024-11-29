@@ -1,0 +1,25 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-xs);
+  padding: var(--size-lg) var(--size-xs);
+  text-decoration: none;
+  border: 2px solid var(--brand-interactive);
+  border-radius: var(--size-xs);
+  color: var(--brand-interactive);
+  background-color: var(--brand-light);
+}
+
+.tile:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow:
+    0 0 0 2px white,
+    0 0 0 4px var(--brand-interactive);
+}
+
+.tile__icon {
+  font-size: 2rem;
+  margin: auto;
+  display: flex;
+}
