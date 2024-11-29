@@ -1,4 +1,3 @@
-import { Accordion } from "@/components/accordion";
 import { Grid } from "@/components/grid";
 import { HorizontalRule } from "@/components/horizontal-rule";
 import { Section } from "@/components/section";
