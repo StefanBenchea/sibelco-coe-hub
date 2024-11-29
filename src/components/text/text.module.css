@@ -10,6 +10,10 @@
   color: var(--text-heading);
 }
 
+.text--color-inherit {
+  color: inherit;
+}
+
 .text--size-3xl {
   font-size: var(--font-size-3xl);
   line-height: var(--line-height-3xl);
@@ -65,4 +69,26 @@
   .text--align-md-end {
     text-align: end;
   }
+}
+
+.text--margin-bottom-xs {
+  margin-bottom: var(--size-xs);
+}
+.text--margin-bottom-sm {
+  margin-bottom: var(--size-sm);
+}
+.text--margin-bottom-md {
+  margin-bottom: var(--size-md);
+}
+
+.text--margin-bottom-lg {
+  margin-bottom: var(--size-lg);
+}
+
+.text--margin-bottom-xl {
+  margin-bottom: var(--size-xl);
+}
+
+.text--margin-bottom-2xl {
+  margin-bottom: var(--size-2xl);
 }

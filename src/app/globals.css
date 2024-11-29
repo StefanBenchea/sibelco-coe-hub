@@ -3,11 +3,15 @@
 body {
   min-width: 320px;
   font-family: var(--font-fira-sans);
-  --max-width: 1200px;
+  --max-width: 1204px;
   --gap: 8px;
   --gutter: 16px;
   --brand-primary: #124682;
-  --text-default: #333;
+  --brand-interactive: #0a7cff;
+  --brand-dark: #030303;
+  --brand-light: #fff;
+  --brand-outline: #bbb;
+  --text-default: var(--brand-dark);
   --text-heading: var(--brand-primary);
   --font-size-3xl: 1.875rem;
   --font-size-2xl: 1.875rem;
@@ -27,6 +31,12 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  --size-2xl: 32px;
+  --size-xl: 24px;
+  --size-lg: 20px;
+  --size-md: 16px;
+  --size-sm: 12px;
+  --size-xs: 8px;
 }
 
 @media (width >= 48em) {

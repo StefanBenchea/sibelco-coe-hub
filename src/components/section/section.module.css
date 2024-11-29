@@ -10,11 +10,60 @@
   gap: var(--gap);
   grid-template-columns: repeat(12, 1fr);
 }
-
 .section__container {
-  grid-column: 3 / span 8;
+  grid-column: 1 / span 12;
 }
 
-.section__container--wide {
-  grid-column: 1 / span 12;
+@media (width >=64em) {
+  .section__container {
+    grid-column: 3 / span 8;
+  }
+
+  .section__container--wide {
+    grid-column: 1 / span 12;
+  }
+}
+
+.section--padding-bottom-xs {
+  padding-bottom: var(--size-xs);
+}
+.section--padding-bottom-sm {
+  padding-bottom: var(--size-sm);
+}
+.section--padding-bottom-md {
+  padding-bottom: var(--size-md);
+}
+
+.section--padding-bottom-lg {
+  padding-bottom: var(--size-lg);
+}
+
+.section--padding-bottom-xl {
+  padding-bottom: var(--size-xl);
+}
+
+.section--padding-bottom-2xl {
+  padding-bottom: var(--size-2xl);
+}
+
+.section--padding-top-xs {
+  padding-top: var(--size-xs);
+}
+.section--padding-top-sm {
+  padding-top: var(--size-sm);
+}
+.section--padding-top-md {
+  padding-top: var(--size-md);
+}
+
+.section--padding-top-lg {
+  padding-top: var(--size-lg);
+}
+
+.section--padding-top-xl {
+  padding-top: var(--size-xl);
+}
+
+.section--padding-top-2xl {
+  padding-top: var(--size-2xl);
 }

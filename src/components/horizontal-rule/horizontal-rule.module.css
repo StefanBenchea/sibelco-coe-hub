@@ -1,5 +1,5 @@
 .hr {
-  border: 1px solid var(--brand-primary);
+  border: 1px solid var(--brand-outline);
   border-bottom: 0;
   width: 100%;
 }
