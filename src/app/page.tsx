@@ -11,7 +11,7 @@ const Page: FC = () => {
   return (
     <div>
       <Section paddingTop="2xl">
-        <Text as="h1" size="3xl" weight="bold">
+        <Text as="h1" size="3xl" weight="bold" color='heading'>
           Your CoE Hub
         </Text>
       </Section>
