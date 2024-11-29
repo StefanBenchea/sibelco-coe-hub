@@ -11,6 +11,7 @@ body {
   --brand-dark: #030303;
   --brand-light: #fff;
   --brand-outline: #bbb;
+  --brand-surface: #fff;
   --text-default: var(--brand-dark);
   --text-heading: var(--brand-primary);
   --font-size-3xl: 1.875rem;

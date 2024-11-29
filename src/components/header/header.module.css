@@ -1,5 +1,8 @@
 .header {
   padding-block: 8px;
+  position: sticky;
+  top: 0;
+  background: var(--brand-surface);
 }
 .header__container {
   display: grid;
