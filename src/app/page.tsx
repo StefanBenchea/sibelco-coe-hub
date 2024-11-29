@@ -6,6 +6,7 @@ import { Tile } from "@/components/tile";
 import { FC } from "react";
 import { PiFileCloudDuotone } from "react-icons/pi";
 import { PiBooksDuotone } from "react-icons/pi";
+import { FaChevronLeft } from "react-icons/fa";
 const Page: FC = () => {
   return (
     <div>
@@ -40,9 +41,9 @@ const Page: FC = () => {
       <Section>
         <Text as="h2" size="xl" weight="bold" marginBottom="md">FAQs?</Text>
         <Grid>
-          <Tile href="www.google.com" icon={<PiBooksDuotone />}> Click link</Tile>
-          <Tile href="www.google.com" icon={<PiBooksDuotone />}> Click link</Tile>
-          <Tile href="www.google.com" icon={<PiBooksDuotone />}> Click link</Tile>
+          <Tile href="www.google.com" icon={<FaChevronLeft />}> Click link</Tile>
+          <Tile href="www.google.com" icon={<FaChevronLeft />}> Click link</Tile>
+          <Tile href="www.google.com" icon={<FaChevronLeft />}> Click link</Tile>
         </Grid>
       </Section>
     </div>
